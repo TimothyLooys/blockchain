@@ -1,0 +1,128 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "counter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "question_",
+						"type": "string"
+					},
+					{
+						"internalType": "string[]",
+						"name": "options_",
+						"type": "string[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "startTime_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "duration_",
+						"type": "uint256"
+					}
+				],
+				"name": "createBallot",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index_",
+						"type": "uint256"
+					}
+				],
+				"name": "getBallotByIndex",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "question",
+								"type": "string"
+							},
+							{
+								"internalType": "string[]",
+								"name": "options",
+								"type": "string[]"
+							},
+							{
+								"internalType": "uint256",
+								"name": "startTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "duration",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct SimpleVoting.Ballot",
+						"name": "ballot",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"storage.sol": "SimpleVoting"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"storage.sol": {
+			"keccak256": "0x51ecc11e04d2a3244af6fc64a8a261cb962b0373058f4370461255236a41ac5d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dfbbfa8d357002ecd2fb2700bec32bd9d5a584ab3619f0d6cb0b5ee5777caf7c",
+				"dweb:/ipfs/QmPksd1L5cJrdZp2vFYKiyDSERNwnMrB9qH2UPxvJJsdV1"
+			]
+		}
+	},
+	"version": 1
+}

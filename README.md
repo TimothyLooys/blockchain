@@ -64,9 +64,7 @@ This is a decentralized voting system built on the Ethereum blockchain using Sol
 
    **Example**:
    ```javascript
-   const ethers = require('ethers');
-   const topic = ethers.utils.formatBytes32String("Election2024");
-   console.log(topic); // Output: 0x456c656374696f6e32303234000000000000000000000000000000000000000000
+   ethers.utils.formatBytes32String("TopicName")
    ```
    This `topic` can now be passed into the contract constructor during deployment.
 

@@ -99,6 +99,3 @@ This is a decentralized voting system built on the Ethereum blockchain using Sol
    console.log(ethers.utils.parseBytes32String(winner));
    ```
 
-## License
-
-This contract is licensed under the MIT License.
